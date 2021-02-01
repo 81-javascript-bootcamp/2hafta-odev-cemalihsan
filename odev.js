@@ -13,8 +13,8 @@ var car = {
     }
 }
 
-var myCarDetails =  car.displayDetails;
-myCarDetails();
+var myCarDetails =  car.displayDetails.bind(car, car.registrationNumber, car.brand);
+myCarDetails()
 
 
 /** 
@@ -23,14 +23,20 @@ myCarDetails();
 
 name string olmali
 name bos olmamali
-bosluk icerebilir, ancak bosluk haridcindeki isimler en az 2 karakterden olusmali.
+bosluk icerebilir, ancak bosluk haricindeki isimler en az 2 karakterden olusmali.
 
 **/
 
 function isValidName(name) {
   /// your code here
-}
+  if(typeof name === 'string' && name.length != 0){
 
+    return true
+  }
+  else{
+    return false
+  }
+}
 
 
 /**
@@ -50,6 +56,9 @@ function summary(genre, year) {
     `${this.title} was written by ${this.author}. It is a ${genre} novel written in ${year}.`,
   )
 }
+
+summary.apply(book, ["dystopian novel", "1932"])
+
 
 
 
