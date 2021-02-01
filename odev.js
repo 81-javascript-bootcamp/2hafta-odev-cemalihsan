@@ -1,6 +1,6 @@
 /** 
 
-1. mycarDetails fonksiyonunu "GA12345 Toyota" ciktisini verecek sekilde duzenleyin.
+1. mycarDetails fonksiyonunu "GA12345 Toyota" ciktisini verecek sekilde duzenleyin.(apply,bind,call)
 
 **/
 
@@ -36,7 +36,7 @@ function isValidName(name) {
 /**
 
 
-3. summary fonkisyonunu ciktisi "Brave New World was written by Aldous Huxley. It is a dystopian novel written in 1932." olacak sekilde cagirin.
+3. summary fonkisyonunu ciktisi "Brave New World was written by Aldous Huxley. It is a dystopian novel written in 1932." olacak sekilde cagirin.(apply,bind,call)
 
 **/
 
