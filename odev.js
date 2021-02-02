@@ -13,9 +13,15 @@ var car = {
     }
 }
 
+/*
 var myCarDetails =  car.displayDetails.bind(car, car.registrationNumber, car.brand);
 myCarDetails()
+*/
 
+var myCarDetails =  car.displayDetails();
+myCarDetails.call(car)
+
+//car.displayDetails.apply(car,[car.registrationNumber,car.brand])
 
 /** 
 
@@ -58,6 +64,13 @@ function summary(genre, year) {
 }
 
 summary.apply(book, ["dystopian novel", "1932"])
+
+/*
+let sum = summary.call(book, "dystopian novel", "1932")
+sum()
+*/
+
+//summary.bind(book,"dystopian novel", "1932")
 
 
 
