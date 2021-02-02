@@ -35,7 +35,9 @@ bosluk icerebilir, ancak bosluk haricindeki isimler en az 2 karakterden olusmali
 
 function isValidName(name) {
   /// your code here
-  if(typeof name === 'string' && name.split(" ").join("").length >= 2){
+  const searchRegExp = /\s/g;
+
+  if(typeof name === 'string' && name.replace(searchRegExp, '').length >= 2){
 
     return true
   }
