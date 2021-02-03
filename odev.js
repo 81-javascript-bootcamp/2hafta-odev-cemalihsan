@@ -14,7 +14,7 @@ var car = {
 }
 
 /*
-var myCarDetails =  car.displayDetails.bind(car, car.registrationNumber, car.brand);
+var myCarDetails =  car.displayDetails.bind(car);
 myCarDetails()
 */
 
